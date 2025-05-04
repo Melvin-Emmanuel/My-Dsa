@@ -1,22 +1,21 @@
-class CircularNode {
-      constructor(data) {
-          this.data = data;
-              this.next = null;
+class CircularNode {  
+   constructor(data) {
+       this.data = data;
+       this.next = null;
                 }
                 }
+class  CircularLinkedList {
+     constructor() {
+         this.head = null;
+       }
 
-                class CircularLinkedList {
-                  constructor() {
-                      this.head = null;
-                        }
-
-                          append(data) {
-                              const newNode = new CircularNode(data);
-                                  if (!this.head) {
-                                        this.head = newNode;
-                                              newNode.next = this.head;
-                                                    return;
-                                                        }
+append(data) {
+  const newNode = new CircularNode(data);
+  if (!this.head) {
+    this.head = newNode;
+    newNode.next = this.head;
+  return;
+  }
 
                                                             let current = this.head;
                                                                 while (current.next !== this.head) {
