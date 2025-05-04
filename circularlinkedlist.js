@@ -11,21 +11,14 @@ class  CircularLinkedList {
 
 append(data) {
   const newNode = new CircularNode(data);
-  if (!this.head) {
-    this.head = newNode;
-    newNode.next = this.head;
-  return;
-  }
-
-                                                            let current = this.head;
-                                                                while (current.next !== this.head) {
-                                                                      current = current.next;
-                                                                          }
-                                                                              current.next = newNode;
+  
+    
+                                                                          
+                            current.next = newNode;
                                                                                   newNode.next = this.head;
                                                                                     }
 
-                                                                                      printList() {
+                                                      printList() {
                                                                                           if (!this.head) return;
 
                                                                                               let current = this.head;
