@@ -14,8 +14,8 @@ class FenwickTree {
           let sum = 0;
           while (index > 0) {
           sum += this.tree[index];
-                                                          index -= index & -index;
-                                                              }
-                                                                  return sum;
-                                                                    }
-                                                                    }
+          index -= index & -index;
+                       }
+            return sum;
+                  }
+                  }
