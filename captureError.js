@@ -5,5 +5,5 @@ function captureErrorStack(errorObj, constructorOpt) {
       // Exaple (Node.js):
       function CustomError(message) {
         this.message = message;
-        stack(this, CustomError);
+        captureError  stack(this, CustomError);
           }
