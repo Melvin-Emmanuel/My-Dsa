@@ -1,15 +1,15 @@
 class HLD {
       constructor(n) {
           this.n = n;
-              this.adj = Array.from({ length: n }, () => []);
-                  this.size = Array(n).fill(0);
-                      this.depth = Array(n).fill(0);
-                          this.parent = Array(n).fill(-1);
-                              this.heavy = Array(n).fill(-1);
-                                  this.head = Array(n).fill(0);
-                                      this.pos = Array(n).fill(0);
-                                          this.currPos = 0;
-                                            }
+          this.adj = Array.from({ length: n }, () => []);
+          this.size = Array(n).fill(0);
+          this.depth = Array(n).fill(0);
+          this.parent = Array(n).fill(-1);
+          this.heavy = Array(n).fill(-1);
+          this.head = Array(n).fill(0);
+          this.pos = Array(n).fill(0);
+          this.currPos = 0;
+        }
 
                                               addEdge(u, v) {
                                                   this.adj[u].push(v);
