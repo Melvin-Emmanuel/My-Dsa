@@ -1,11 +1,11 @@
 class CentroidDecomposition {
       constructor(n) {
           this.n = n;
-              this.adj = Array.from({ length: n }, () => []);
-                  this.subSize = Array(n).fill(0);
-                      this.centroidMarked = Array(n).fill(false);
-                          this.centroidTree = Array(n).fill(-1);
-                            }
+          this.adj = Array.from({ length: n }, () => []);
+          this.subSize = Array(n).fill(0);
+          this.centroidMarked = Array(n).fill(false);
+          this.centroidTree = Array(n).fill(-1);
+            }
 
                               addEdge(u, v) {
                                   this.adj[u].push(v);
@@ -46,4 +46,3 @@ class CentroidDecomposition {
                                                                                                                                                                           return centroid;
                                                                                                                                                                             }
                                                                                                                                                                             }
-}
