@@ -1,9 +1,9 @@
 class TrieNode {
       constructor() {
           this.children = {};
-              this.isWord = false;
-                }
-                }
+          this.isWord = false;
+        }
+            }
 
                 class Trie {
                   constructor() {
