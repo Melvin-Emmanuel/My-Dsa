@@ -1,21 +1,21 @@
 class KDNode {
       constructor(point, depth = 0) {
           this.point = point;
-              this.left = this.right = null;
-                  this.depth = depth;
+          this.left = this.right = null;
+          this.depth = depth;
+           }
                     }
+
+      class KDTree {
+            constructor() {
+               this.root = null;
                     }
 
-                    class KDTree {
-                      constructor() {
-                          this.root = null;
-                            }
+      insert(point) {
+            this.root = this._insert(this.root, point, 0);
+                     }
 
-                              insert(point) {
-                                  this.root = this._insert(this.root, point, 0);
-                                    }
-
-                                      _insert(node, point, depth) {
+      _insert(node, point, depth) {
                                           if (!node) return new KDNode(point, depth);
                                               const axis = depth % 2;
                                                   if (point[axis] < node.point[axis]) {
