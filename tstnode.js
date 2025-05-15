@@ -1,15 +1,15 @@
 class TSTNode {
       constructor(char) {
           this.char = char;
-              this.left = this.eq = this.right = null;
-                  this.isEnd = false;
-                    }
-                    }
-
-                    class TernarySearchTree {
-                      constructor() {
-                          this.root = null;
-                            }
+          this.left = this.eq = this.right = null;
+          this.isEnd = false;
+         }
+      }   
+      
+   class  TernarySearchTree {
+      constructor() {
+         this.root = null;
+           }
 
                               insert(word) {
                                   this.root = this._insert(this.root, word, 0);
@@ -45,4 +45,3 @@ class TSTNode {
                                                                                                                               return this._search(node.eq, word, idx + 1);
                                                                                                                                 }
                                                                                                                                 }
-}
