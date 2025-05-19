@@ -1,4 +1,4 @@
-var findMedianSortedArrays = functio
+
 var findMedianSortedArrays = function(nums1, nums2) {
   var allNums = nums1.concat(nums2);
   allNums = allNums.sort((a, b) => a - b)
