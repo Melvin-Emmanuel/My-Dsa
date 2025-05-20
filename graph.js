@@ -1,20 +1,20 @@
 class Graph {
       constructor() {
           this.adjList = new Map();
-            }
+    }
 
-              addVertex(vertex) {
-                  if (!this.adjList.has(vertex)) {
-                        this.adjList.set(vertex, []);
-                            }
-                              }
+     addVertex(vertex) {
+          if (!this.adjList.has(vertex)) {
+             this.adjList.set(vertex, []);
+          }     
+    }
 
-                                addEdge(vertex1, vertex2) {
-                                    this.addVertex(vertex1);
-                                        this.addVertex(vertex2);
-                                            this.adjList.get(vertex1).push(vertex2);
-                                                this.adjList.get(vertex2).push(vertex1); // Remove this for a directed graph
-                                                  }
+    addEdge(vertex1, vertex2) {
+         this.addVertex(vertex1);
+         this.addVertex(vertex2);
+         this.adjList.get(vertex1).push(vertex2);
+         this.adjList.get(vertex2).push(vertex1); // Remove this for a directed graph
+      }
 
                                                     printGraph() {
                                                         for (let [vertex, edges] of this.adjList.entries()) {
