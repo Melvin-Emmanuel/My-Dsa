@@ -16,11 +16,11 @@ class Graph {
          this.adjList.get(vertex2).push(vertex1); // Remove this for a directed graph
       }
 
-                                                    printGraph() {
-                                                        for (let [vertex, edges] of this.adjList.entries()) {
-                                                              console.log(`${vertex} -> ${edges.join(', ')}`);
-                                                                  }
-                                                                    }
+    printGraph() {
+        for (let [vertex, edges] of this.adjList.entries()) {
+             console.log(`${vertex} -> ${edges.join(', ')}`);
+                    }
+             }
 
                                                                       bfs(start) {
                                                                           const visited = new Set();
