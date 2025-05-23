@@ -27,22 +27,22 @@ class MaxHeap {
             }
       }
 
-                                                                                    extractMax() {
-                                                                                        if (this.heap.length === 0) return null;
-                                                                                            if (this.heap.length === 1) return this.heap.pop();
+      extractMax() {
+          if (this.heap.length === 0) return null;
+          if (this.heap.length === 1) return this.heap.pop();
 
-                                                                                                const max = this.heap[0];
-                                                                                                    this.heap[0] = this.heap.pop();
-                                                                                                        this.heapifyDown();
-                                                                                                            return max;
-                                                                                                              }
+          const max = this.heap[0];
+          this.heap[0] = this.heap.pop();
+          this.heapifyDown();
+          return max;
+        }
 
-                                                                                                                heapifyDown() {
-                                                                                                                    let index = 0;
-                                                                                                                        const size = this.heap.length;
+      heapifyDown() {
+         let index = 0;
+         const size = this.heap.length;
 
-                                                                                                                            while (this.getLeftChildIndex(index) < size) {
-                                                                                                                                  let largerChildIndex = this.getLeftChildIndex(index);
+         while (this.getLeftChildIndex(index) < size) {
+             let largerChildIndex = this.getLeftChildIndex(index);
                                                                                                                                         const rightChildIndex = this.getRightChildIndex(index);
 
                                                                                                                                               if (
