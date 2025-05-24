@@ -3,13 +3,13 @@ class PriorityQueue {
           this.queue = [];
             }
 
-              getParentIndex(i) { return Math.floor((i - 1) / 2); }
-                getLeftChildIndex(i) { return 2 * i + 1; }
-                  getRightChildIndex(i) { return 2 * i + 2; }
-
-                    swap(i, j) {
-                        [this.queue[i], this.queue[j]] = [this.queue[j], this.queue[i]];
-                          }
+      getParentIndex(i) { return Math.floor((i - 1) / 2); }
+      getLeftChildIndex(i) { return 2 * i + 1; }
+      getRightChildIndex(i) { return 2 * i + 2; }
+ 
+      swap(i, j) {
+          [this.queue[i], this.queue[j]] = [this.queue[j], this.queue[i]];
+    }
 
                             insert(value, priority) {
                                 const newNode = { value, priority };
@@ -68,4 +68,3 @@ class PriorityQueue {
                                                                                                                                                                                                                             return this.queue.length === 0;
                                                                                                                                                                                                                               }
                                                                                                                                                                                                                               }
-}
