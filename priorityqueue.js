@@ -11,15 +11,15 @@ class PriorityQueue {
           [this.queue[i], this.queue[j]] = [this.queue[j], this.queue[i]];
     }
 
-                            insert(value, priority) {
-                                const newNode = { value, priority };
-                                    this.queue.push(newNode);
-                                        this.heapifyUp();
-                                          }
+      insert(value, priority) {
+          const newNode = { value, priority };
+          this.queue.push(newNode);
+          this.heapifyUp();
+     }
 
-                                            heapifyUp() {
-                                                let index = this.queue.length - 1;
-                                                    while (
+    heapifyUp() {
+      let index = this.queue.length - 1;
+      while (
                                                           index > 0 &&
                                                                 this.queue[this.getParentIndex(index)].priority > this.queue[index].priority
                                                                     ) {
