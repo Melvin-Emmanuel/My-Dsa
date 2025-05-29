@@ -4,12 +4,12 @@ function productExceptSelf(nums) {
 
           for (let i = 0; i < nums.length; i++) {
                 res[i] *= left;
-                    left *= nums[i];
+                left *= nums[i];
           }
 
             for (let i = nums.length - 1; i >= 0; i--) {
                     res[i] *= right;
-                        right *= nums[i];
+                    right *= nums[i];
             }
 
               return res;
