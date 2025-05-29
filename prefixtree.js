@@ -1,14 +1,14 @@
 class TrieNode {
-      constructor() {
-          this.children = {};
-          this.isWord = false;
-        }
-            }
+   constructor() {
+     this.children = {};
+     this.isWord = false;
+      }
+   }
 
-                class Trie {
-                  constructor() {
-                      this.root = new TrieNode();
-                        }
+ class Trie {
+    constructor() {
+      this.root = new TrieNode();
+    }
 
                           insert(word) {
                               let node = this.root;
