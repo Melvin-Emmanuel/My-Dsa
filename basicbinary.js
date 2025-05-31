@@ -1,21 +1,21 @@
 // Define a Node in the binary tree
 class TreeNode {
   constructor(value) {
-      this.value = value;
-          this.left = null;
-              this.right = null;
-                }
-                }
+     this.value = value;
+     this.left = null;
+     this.right = null;
+     }
+ }
 
                 // Define the Binary Tree structure
-                class BinaryTree {
-                  constructor() {
-                      this.root = null;
-                        }
+class BinaryTree {
+   constructor() {
+      this.root = null;
+   }
 
                           // Insert value into the binary tree (non-BST)
-                            insert(value) {
-                                const newNode = new TreeNode(value);
+    insert(value) {
+       const newNode = new TreeNode(value);
 
                                     if (!this.root) {
                                           this.root = newNode;
